@@ -1,0 +1,70 @@
+roi-report-system/
+
+│
+
+├── backend/
+
+│   ├── main.py                # FastAPI server with endpoints
+
+│   ├── auth.py                # Authentication & subscription checks
+
+│   ├── db.py                  # Database connection & models
+
+│   ├── schemas.py             # Pydantic schemas for requests/responses
+
+│   ├── routes/
+
+│   │   └── reports.py         # API endpoints for creating/listing reports
+
+│   └── utils/
+
+│       ├── billing.py         # Stripe integration
+
+│       └── notifications.py   # SendGrid/Twilio notifications
+
+│
+
+├── worker/
+
+│   ├── worker.py              # Main queue worker
+
+│   ├── data_enrich.py         # Property & comps data service
+
+│   ├── valuation.py           # ROI, IRR, NOI calculations
+
+│   ├── openai_service.py      # OpenAI API calls
+
+│   ├── pdf_renderer.py        # HTML → PDF rendering (WeasyPrint)
+
+│   └── storage.py             # Upload PDF to S3 / cloud
+
+│
+
+├── templates/
+
+│   └── report.html            # Branded REALTY TV HTML template
+
+│
+
+├── ai_output_examples/
+
+│   └── sample_report.json     # Example AI-generated JSON for testing
+
+│
+
+├── config/
+
+│   ├── config.py              # API keys, DB URLs, storage credentials
+
+│   └── logging_config.py      # Logging setup
+
+│
+
+├── requirements.txt           # Python dependencies
+
+├── package.json               # Optional Node.js dependencies if using Puppeteer
+
+├── README.md                  # Project overview + instructions
+
+
+└── .gitignore
