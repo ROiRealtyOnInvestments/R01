@@ -1,0 +1,19 @@
+# API keys, database, storage
+
+OPENAI_API_KEY = "sk-xxxx"
+
+STRIPE_API_KEY = "sk_test_..."
+
+SENDGRID_API_KEY = "SG_xxxx"
+
+AWS_ACCESS_KEY_ID = "AKIA..."
+
+AWS_SECRET_ACCESS_KEY = "..."
+
+S3_BUCKET = "roi-reports"
+
+DATABASE_URL = "postgresql://user:password@host:port/dbname"
+
+
+REDIS_URL = "redis://localhost:6379/0"
+
